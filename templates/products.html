@@ -1,0 +1,21 @@
+<div>
+    <ul>
+        {% for product in products %}
+        <li>
+            {{product.brand_name}}: {{product.product_name}} {{product.price}}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        <li>
+            Unique products: {{uniqueProductCount}}
+        </li>
+        <li>
+            Unique brands: {{uniqueBrandCount}}
+        </li>
+        <li>
+            Average price: ${{avgPrice}}
+        </li>
+    </ul>
+</div>
